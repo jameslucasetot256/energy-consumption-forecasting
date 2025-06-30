@@ -25,13 +25,13 @@ The idea was to compare different models and see which one works better for this
 
 
 **Model Comparison**
-**Model**								**MAE**	            **MSE**
+**Model**					**MAE**	            **MSE**
 
-Linear Regression	    5,275.51 MW	    43,203,776.13
+Linear Regression	      5,275.51 MW	     43,203,776.13
 
-ARIMA (1, 0, 1)	      5,331.82 MW	    43,633,423.47
-
-SARIMA	              5,287.31 MW	    37,107,301.01
+ARIMA (1, 0, 1)	      	  5,331.82 MW	     43,633,423.47
+	
+SARIMA	            	  5,287.31 MW	     37,107,301.01
 
 The SARIMA model provided the best balance because it handled seasonality better and gave the lowest MSE.
 
