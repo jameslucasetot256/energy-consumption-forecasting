@@ -8,6 +8,14 @@ I started by exploring a simple linear regression model, then moved to ARIMA, an
 
 The idea was to compare different models and see which one works better for this type of energy data.
 
+**Dataset**
+
+## Dataset
+This project uses the [PJME Hourly Energy Consumption Dataset](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption) from Kaggle.
+
+You can download the dataset directly from the link to reproduce this project.
+
+
 
 **What I Did**
 
@@ -25,13 +33,12 @@ The idea was to compare different models and see which one works better for this
 
 
 **Model Comparison**
-**Model**					**MAE**	            **MSE**
 
-Linear Regression	      5,275.51 MW	     43,203,776.13
-
-ARIMA (1, 0, 1)	      	  5,331.82 MW	     43,633,423.47
-	
-SARIMA	            	  5,287.31 MW	     37,107,301.01
+| Model             | MAE         | MSE           |
+| ----------------- | ----------- | ------------- |
+| Linear Regression | 5,275.51 MW | 43,203,776.13 |
+| ARIMA (1, 0, 1)   | 5,331.82 MW | 43,633,423.47 |
+| SARIMA            | 5,287.31 MW | 37,107,301.01 |
 
 The SARIMA model provided the best balance because it handled seasonality better and gave the lowest MSE.
 
